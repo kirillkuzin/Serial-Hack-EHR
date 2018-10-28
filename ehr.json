@@ -1,0 +1,321 @@
+[
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "userAddress",
+				"type": "address"
+			},
+			{
+				"name": "diseaseTimestampCapsule",
+				"type": "bytes"
+			},
+			{
+				"name": "diagnosisCapsule",
+				"type": "bytes"
+			},
+			{
+				"name": "therapyCapsule",
+				"type": "bytes"
+			},
+			{
+				"name": "diseaseTimestamp",
+				"type": "bytes32"
+			},
+			{
+				"name": "timestamp",
+				"type": "bytes"
+			},
+			{
+				"name": "diagnosis",
+				"type": "bytes"
+			},
+			{
+				"name": "therapy",
+				"type": "bytes"
+			}
+		],
+		"name": "addDisease",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "userAddress",
+				"type": "address"
+			},
+			{
+				"name": "diseaseTimestamp",
+				"type": "bytes32"
+			},
+			{
+				"name": "result",
+				"type": "bytes"
+			}
+		],
+		"name": "closeDisease",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "userAddress",
+				"type": "address"
+			},
+			{
+				"name": "firstNameCapsule",
+				"type": "bytes"
+			},
+			{
+				"name": "lastNameCapsule",
+				"type": "bytes"
+			},
+			{
+				"name": "dateOfBirthCapsule",
+				"type": "bytes"
+			},
+			{
+				"name": "firstName",
+				"type": "bytes"
+			},
+			{
+				"name": "lastName",
+				"type": "bytes"
+			},
+			{
+				"name": "dateOfBirth",
+				"type": "bytes"
+			}
+		],
+		"name": "newUser",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "userAddress",
+				"type": "address"
+			},
+			{
+				"name": "historyTimestampCapsule",
+				"type": "bytes"
+			},
+			{
+				"name": "messageCapsule",
+				"type": "bytes"
+			},
+			{
+				"name": "diseaseTimestamp",
+				"type": "bytes32"
+			},
+			{
+				"name": "historyTimestamp",
+				"type": "bytes32"
+			},
+			{
+				"name": "timestamp",
+				"type": "bytes"
+			},
+			{
+				"name": "message",
+				"type": "bytes"
+			}
+		],
+		"name": "updateDisease",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "",
+				"type": "address"
+			},
+			{
+				"name": "",
+				"type": "bytes32"
+			}
+		],
+		"name": "diseases",
+		"outputs": [
+			{
+				"name": "diseaseTimestamp",
+				"type": "bytes"
+			},
+			{
+				"name": "signature",
+				"type": "address"
+			},
+			{
+				"name": "diseaseTimestampCapsule",
+				"type": "bytes"
+			},
+			{
+				"name": "diagnosisCapsule",
+				"type": "bytes"
+			},
+			{
+				"name": "therapyCapsule",
+				"type": "bytes"
+			},
+			{
+				"name": "diagnosis",
+				"type": "bytes"
+			},
+			{
+				"name": "therapy",
+				"type": "bytes"
+			},
+			{
+				"name": "closed",
+				"type": "bool"
+			},
+			{
+				"name": "result",
+				"type": "bytes"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "userAddress",
+				"type": "address"
+			}
+		],
+		"name": "getDiseasesTimestamps",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bytes32[]"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "userAddress",
+				"type": "address"
+			},
+			{
+				"name": "diseaseTimestamp",
+				"type": "bytes32"
+			}
+		],
+		"name": "getHistorysTimestamps",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bytes32[]"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "",
+				"type": "address"
+			},
+			{
+				"name": "",
+				"type": "bytes32"
+			},
+			{
+				"name": "",
+				"type": "bytes32"
+			}
+		],
+		"name": "historys",
+		"outputs": [
+			{
+				"name": "historyTimestamp",
+				"type": "bytes"
+			},
+			{
+				"name": "historyTimestampCapsule",
+				"type": "bytes"
+			},
+			{
+				"name": "messageCapsule",
+				"type": "bytes"
+			},
+			{
+				"name": "signature",
+				"type": "address"
+			},
+			{
+				"name": "message",
+				"type": "bytes"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "users",
+		"outputs": [
+			{
+				"name": "firstNameCapsule",
+				"type": "bytes"
+			},
+			{
+				"name": "lastNameCapsule",
+				"type": "bytes"
+			},
+			{
+				"name": "dateOfBirthCapsule",
+				"type": "bytes"
+			},
+			{
+				"name": "firstName",
+				"type": "bytes"
+			},
+			{
+				"name": "lastName",
+				"type": "bytes"
+			},
+			{
+				"name": "dateOfBirth",
+				"type": "bytes"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	}
+]
