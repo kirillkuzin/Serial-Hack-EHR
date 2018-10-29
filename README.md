@@ -8,6 +8,9 @@
 python application.py
 ```
 
+127.0.0.1:5000/new - новый пользователь
+127.0.0.1:5000/profile - профиль
+
 ## Built With
 
 * [Ethereum](https://www.ethereum.org/) - Blockchain app platform
